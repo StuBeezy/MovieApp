@@ -1,0 +1,36 @@
+query getPopularMoviesQuery($page: Int!) {
+    movies(page: $page) {
+        page
+        totalPages
+        movies {
+            id
+            overview
+            poster
+            title
+        }
+    }
+}
+
+query getMovieDetails($movieId: Int!) {
+    movie(id: $movieId) {
+        title
+        id
+        poster
+        budget
+        revenue
+        language
+        backdrop
+        runtime
+        releaseDate
+        overview
+        cast {
+            actorId
+            actorName
+            character
+            poster
+        }
+        genres {
+            name
+        }
+    }
+}

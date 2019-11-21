@@ -1,0 +1,130 @@
+.body {
+  font-family: Quicksand, sans-serif !important;
+}
+.movie-details {
+  .movie-backdrop {
+    color: #fff;
+    min-height: 600px;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    position: relative;
+  }
+
+  .movie-intro {
+    margin-top: -300px;
+    .movie-intro-container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      .movie-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        .movie-col {
+          position: relative;
+          width: 100%;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px;
+          flex: 0 0 100%;
+          max-width: 100%;
+          .movie-poster {
+            width: 40%;
+            position: relative;
+            float: left;
+            padding-left: 65px;
+            &:before {
+              content: "";
+              position: absolute;
+              display: block;
+              height: 25%;
+              width: 25%;
+              bottom: 0;
+              z-index: 8;
+              opacity: 0;
+              transition: all .6s ease;
+            }
+            img {
+              vertical-align: middle;
+              width: 60%;
+            }
+          }
+          .movie-title {
+            float: left;
+            margin-top: 50px;
+            color: #fff;
+            h3 {
+              font-size: 30px;
+            }
+            .movie-subtext {
+              list-style: none;
+              margin-bottom: 20px;
+              padding: 0;
+              li {
+                display: inline-block;
+                opacity: .7;
+                &:after {
+                  content: '| ';
+                  padding-left: 10px;
+                  padding-right: 4px;
+                }
+                &:last-child:after {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .movie-details-box {
+    float: right;
+    border: 1px solid #ebebeb;
+    right: 25%;
+    padding: 45px;
+    position: relative;
+  }
+
+  .header {
+    font-family: Quicksand sans-serif;
+    font-size: 30px;
+    line-height: unset;
+    color: #3e4555;
+    padding-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .cast-box {
+    padding: 10px 45px 45px 45px;
+    width: 95%;
+    margin-left: 50px;
+    max-height: 550px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border: 1px solid #ebebeb;
+  }
+
+  .actor-info {
+    .actor-poster {
+      width: 60px;
+      display: inline-block;
+      margin-right: 20px;
+      border-radius: 30%;
+    }
+
+    .actor-name {
+      display: inline-block;
+      position: relative;
+      bottom: 45px;
+    }
+
+    .no-actor {
+      bottom: 25px;
+    }
+  }
+}

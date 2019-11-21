@@ -1,0 +1,9 @@
+query getSearchMovies($query: String!) {
+    search(query: $query) {
+        movies {
+            id
+            poster
+            title
+        }
+    }
+}
