@@ -34,7 +34,7 @@ class LaunchAPI extends RESTDataSource {
   constructor() {
     super();
     this.baseURL = 'https://api.themoviedb.org/3/';
-    this.apiKey = '3d0456deece09b90c42f50f9e9fcacfe';
+    this.apiKey = ''; // Grab your own API key from MovieDB API
   }
 
   async getPopularMovies(page) {
