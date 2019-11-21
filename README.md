@@ -6,6 +6,8 @@ details about that movie (cast, budget, revenue, release date, etc). Below are t
 
 
 ```
+clone the repo
+cd MovieApp/
 npm run install:all
 npm run start
 ```
